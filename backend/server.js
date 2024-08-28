@@ -53,8 +53,14 @@ app.get('/data', (req, res) => {
 });
 
 /**
- * Inicia el servidor
+ * Inicia el servidor y yo sigo sin saber que copiarle :c
+ * 
+ * 
+ *
  */
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
 });
+/**
+ * 
+ */
