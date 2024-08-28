@@ -52,6 +52,17 @@ app.get('/data', (req, res) => {
     }
 });
 
+
+app.get('/pokemon', (req, res) => {
+    const pokemon = {
+        nombre: "pikachu",
+        tipo: "electrico",
+        poder: "rayos"
+    };
+
+    res.json(pokemon);
+    });
+
 /**
  * Inicia el servidor
  */
