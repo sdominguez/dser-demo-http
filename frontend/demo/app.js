@@ -1,10 +1,11 @@
+const hostname = "localhost";
 /**
  * Agregamos el evento click al botón fetchData del documento HTML
  */
 document.getElementById('fetchData').addEventListener('click', ()=> {
     const etag = localStorage.getItem('etag');
     
-    fetch('http://localhost:3000/data', {
+    fetch(`http://${hostname}:3000/data`, {
         method: 'GET',
         headers: etag ? { 'If-None-Match': etag } : {}
     })
