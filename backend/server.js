@@ -34,7 +34,7 @@ app.use(cors(corsOptions));
  */
 app.get('/data', (req, res) => {
     const data = {
-        message: "Hola, este es la información en tu Caché :S"
+        message: "Hola, este es la información en tu Caché :|"
     };
 
     //ETag basado en el contenido
